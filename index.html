@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <h2 class ="logo">GameGuide</h2>
+        </div>
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>Login</h2>
+                    <form>
+                      <input type="email" class="input-box" placeholder="Enter Email Here"required>
+                      <input type="password" class="input-box" placeholder="Enter Password Here"required>
+                      <button type="submit" class="submit-btn">SUBMIT</button>
+                      <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">Register Here</button>
+                    <a href="">Forget Password</a>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                      <input type="text" class="input-box" placeholder="Which batch winned in pitha utshob-2019"required>
+                      <input type="email" class="input-box" placeholder="Enter Email Here"required>
+                      <input type="password" class="input-box" placeholder="Enter Password Here"required>
+                      <button type="submit" class="submit-btn">SUBMIT</button>
+                      <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">Login Here</button>
+                    <a href="">Forget Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card = document.getElementById("card");
+        
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+</body>
+</html>
